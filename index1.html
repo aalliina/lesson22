@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<h1>text()</h1>
+    <div class="text1"><p>
+
+        Ле́то — одно из четырёх времён года, между весной и осенью, характеризующееся наиболее высокой температурой окружающей среды. В день летнего солнцестояния дни самые длинные, а ночи самые короткие.
+
+Дата начала лета варьируется в зависимости от климата, традиций и культуры. Если в северном полушарии лето, то в Южном полушарии — зима, и наоборот. Состоит из трёх месяцев: в Северном полушарии — июня, июля и августа, в Южном — декабря, января и февраля.
+    </p>
+    </div>
+    <button>Показать</button>
+  <p>Введите текст: <input type="text" /></p>
+  <button>Изменить содержимое элемента </button>
+  <script>
+      $(function (){ 
+      $('button').click(function(){
+         var html = $('.text1').text();
+         alert(html);
+      });
+  });
+  $(function (){
+    $('button').click(function(){
+       var text = $('input').val();
+       $('div').text(text);
+    });
+});
+
+  </script>
+  <div class="append">
+       <h1>append</h1>
+ <p id="j">Какой-то текст: </p>
+<script>
+$("#j").append(document.createTextNode(" еще текст"));
+</script>
+  
+  </div>
+
+  
+</body>
+</html>

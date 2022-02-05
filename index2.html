@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="slide">
+        <h1>slide up/down</h1>
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aperiam temporibus, amet odit dignissimos id veritatis perferendis fuga eius et optio explicabo sequi, quod reiciendis quidem rem, non qui. Delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo saepe reprehenderit repellat consequuntur iste doloribus quisquam vitae, unde dolor esse aut, ad nesciunt corporis eum. Recusandae velit reprehenderit odio?</p>
+        <button class="show1">Скрыть</button>
+        <button class="hide1">Показать</button>
+        <script>
+            $( document ).ready(function(){
+            $( ".show1" ).click(function(){ 
+              $( "p" ).slideUp(); 
+            });
+            $( ".hide1" ).click(function(){ 
+              $( "p" ).slideDown();
+            });
+          });
+        </script>
+         </div>
+<div class="set">
+
+</div>
+        <h1>setTimeout</h1>
+        <script>
+setTimeout(function(){
+  alert("Какой-то текст");
+}, 2000);
+
+        </script>
+        
+</body>
+</html>
